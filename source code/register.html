@@ -13,7 +13,7 @@
      <!-- Font awesome cdn -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-     
+
     <!-- External Css -->
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="register.css"/>
@@ -60,21 +60,24 @@
     <!-- Main Section -->
     <main>
         <div class="row-profile">
-            <form>
+            <form onsubmit="register()">
                 <div class="col col-1">
                   <h1>Register</h1>
                   <br><br><br>
                   <p>Please fill in this form to create an account.</p>
                   <hr>
-              
+
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" placeholder="First Name" required>
+
                   <label for="email"><b>Email</b></label>
                   <input type="text" placeholder="Enter Email" name="email" id="email" required>
               
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                  <label for="password"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password" id="password" required>
               
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                  <label for="password-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required>
                   <hr>
                   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
               
@@ -84,7 +87,7 @@
               </form>
             <div class="col col-2">
                 <div class="profile-img">
-                    <img src="profile.PNG" alt="profile picture for a girl holding a laptop">
+                    <img src="profile.PNG" alt="">
                 </div>
             </div>
         </div>
